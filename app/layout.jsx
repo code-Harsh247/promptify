@@ -1,4 +1,6 @@
 import '@styles/global.css'
+import Nav from '@components/Nav'
+import Provider from '@components/Provider'
 
 export const metadata = {
     title: "Promptify",
@@ -14,6 +16,7 @@ const Rootlayout = ({children}) => {
             </div>
 
             <main className='app'>
+                <Nav />
                 {children}
             </main>
         </body>
